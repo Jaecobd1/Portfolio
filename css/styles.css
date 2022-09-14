@@ -102,7 +102,7 @@ nav .left {
 }
 /* HERO BUTTON LINKS */
 .hero .content a {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, );
   color: #fff;
   border: 2px solid #fff;
   border-radius: 100px;
@@ -116,8 +116,8 @@ nav .left {
 .button-container {
   width: 80%;
   display: flex;
-  justify-content: space-around;
-  flex: start;
+  
+  justify-content: space-between;
 }
 
 /* First & Last Name */
@@ -249,9 +249,9 @@ nav .left {
 /* Photography Section */
 .photography {
   width: 100%;
-  background-color: #fff;
   display: block;
   justify-content: center;
+  color: #fff;
 }
 
 
@@ -264,7 +264,7 @@ nav .left {
 
     display: grid;
    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    grid-auto-rows: 100px 300px;
+    grid-auto-rows: 100px 150px;
     grid-gap: 10px;
   width: 80%;
   margin: 0 auto;
@@ -294,7 +294,7 @@ nav .left {
     transition: .5s ease-in-out;
 }
 .photography .container .item-container:hover .image img {
-    transform: scale(1,2);
+    transform: scale(1.3,1.3);
 }
 
 .photography .container .item-container .text {
@@ -342,12 +342,75 @@ padding:2px;
 .h-2{
     grid-row: span 2;
 }
+.h-3 {
+    grid-row: span 3;
+}
+
+.videography {
+    margin-top: 32px;
+    height: 100%;
+    width: 100%;
+    margin: 18px auto;
+}
+.videography .container {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    gap: 5%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+.videography .container .item {
+    width: 30%;
+    height: 30%;
+    min-width: 400px;
+}
+.videography .container .item iframe {
+    width: 100%;
+    height: 100%;
+    min-width: 400px;
+    min-height: 250px;
+}
+.videography .container .item .text h2{
+    font-family: montserrat;
+    color: #fff;
+}
+.videography .title h1{
+    color: #fff;
+    text-align: center;
+    font-family: montserrat;
+    font-size: 36px;
+    margin-top: 50px;
+    
+}
 
 
 @media screen and (max-width:400px){
-    /* .container{
+    .photography.container{
         grid-template-columns: repeat(2, 1fr);
-    } */
+    }
+    
+    
+}
+@media only screen and (min-width: 900px) {
+    /* Hero */
+    .hero .name-container .first {
+        font-size: 96px;
+    }
+    .hero .name-container .last {
+        font-size: 96px;
+        padding-top: 150px;
+    }
+
+    /* Videography */
+    .videography .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
 }
 
 
@@ -370,6 +433,7 @@ padding:2px;
         top: 50%;
         opacity: 1;
     }
+    
 }
 
 
