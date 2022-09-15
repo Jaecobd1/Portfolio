@@ -192,7 +192,7 @@ nav .left {
   color: #fff;
   text-align: center;
   font-family: montserrat;
-  font-size: 48px;
+  font-size: 36px;
 }
 
 .web-development img {
@@ -272,6 +272,7 @@ nav .left {
   font-family: montserrat-l;
   text-align: center;
   padding: 100px;
+  font-size: 36px;
 }
 .photography .container {
 
@@ -393,9 +394,11 @@ padding:2px;
 .videography .title h1{
     color: #fff;
     text-align: center;
-    font-family: montserrat;
+    font-family: montserrat-l;
     font-size: 36px;
     margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;;
     
 }
 
@@ -405,6 +408,13 @@ padding:2px;
 /* Gradient One */
 .gradient-1 {
     background-image: linear-gradient(to bottom, black, #043540);
+    height: 200px;
+    width: 100%;
+}
+
+/* Gradient Two */
+.gradient-two {
+    background-image: linear-gradient(to top, black, #043540);
     height: 200px;
     width: 100%;
 }
@@ -423,8 +433,11 @@ padding:2px;
     height: 200px;
     display: flex;
     justify-content: center;
-    font-size: 32px;
+    
     font-family: montserrat-l;
+}
+.programming .title h1 {
+    font-size: 36px;
 }
 .programming .container{
     width: 90%;
@@ -436,7 +449,6 @@ padding:2px;
     padding-right: 5%;
     background-color: #fff;
     border-radius: 25px;
-    gap: 25px;
     
 }
 /*  */
@@ -474,6 +486,32 @@ padding:2px;
 
 
 
+/* 3D Design Section */
+
+.ThreeD {
+    height: 100%;
+
+}
+
+.ThreeD .title {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ThreeD .title h2 {
+    font-size: 36px;
+    color: #fff;
+    font-family: montserrat-l;
+    text-align: center;
+    
+}
+.ThreeD .three-container {
+    color: #fff;
+}
+
+
 @media screen and (max-width:400px){
     .photography.container{
         grid-template-columns: repeat(2, 1fr);
@@ -494,6 +532,8 @@ padding:2px;
     /* Videography */
     .videography .container {
         grid-template-columns: repeat(3, 1fr);
+    }.videography .title h1 {
+        font-size: 32px;
     }
 
     /* Nav */
@@ -504,6 +544,10 @@ padding:2px;
     /* Programming */
     .programming .container {
         grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    .programming .title {
+        font-size: 32px;
     }
 
 
