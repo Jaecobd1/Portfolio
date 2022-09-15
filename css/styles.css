@@ -169,6 +169,19 @@ nav .left {
   font-family: montserrat-l;
   font-size: 24px;
 }
+.menu .contact a{
+    color: #fff;
+    font-family: montserrat;
+    font-size: 32px;
+    text-align: left;
+    margin-right: 50px;
+    
+}
+.menu .contact{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
 
 /* Web Development */
 .web-development {
@@ -348,7 +361,6 @@ padding:2px;
 
 .videography {
     margin-top: 32px;
-    height: 100%;
     width: 100%;
     margin: 18px auto;
 }
@@ -388,6 +400,57 @@ padding:2px;
 }
 
 
+
+
+/* Gradient One */
+.gradient-1 {
+    background-image: linear-gradient(to bottom, black, #043540);
+    height: 200px;
+    width: 100%;
+}
+
+/* Programming Section */
+.programming{
+    width:100%;
+    background-color: #043540;
+    height:auto;
+}
+.programming .title h1{
+    color: #fff;
+}
+.programming .title{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    font-family: montserrat-l;
+}
+.programming .container{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex-wrap: wrap;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #a4a4a3;
+    gap: 25px;
+    
+}
+.programming .container .card{
+    background-color: #fff;
+    height: 300px;
+    max-width: 600px;
+    max-height: 700px;
+    min-width: 300px;
+    min-height: 500px;
+    border-radius: 25px;
+    row-gap: 25px;
+}
+
+
+
 @media screen and (max-width:400px){
     .photography.container{
         grid-template-columns: repeat(2, 1fr);
@@ -408,6 +471,11 @@ padding:2px;
     /* Videography */
     .videography .container {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Nav */
+    nav .right a {
+        font-size: 42px;
     }
 
 
