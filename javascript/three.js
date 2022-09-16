@@ -3,7 +3,7 @@ console.log(THREE);
 
 const sizes = {
     width: 800,
-    height: 600
+    height: 400
 }
 
 // scene
@@ -11,7 +11,7 @@ const scene = new THREE.Scene()
 
 // Red Cube
 
-const geometry = new THREE.TorusKnotGeometry()
+const geometry = new THREE.TorusKnotGeometry(10, 4)
 const material = new THREE.MeshBasicMaterial({ color: 'green' })
 material.wireframe = true
 const mesh = new THREE.Mesh(geometry, material)
@@ -38,8 +38,8 @@ renderer.setSize(sizes.width, sizes.height)
 function animate() {
     requestAnimationFrame(animate);
 
-    mesh.rotation.x += 0.01;
-    mesh.rotation.y += 0.01;
+    mesh.rotation.x += 0.03;
+    mesh.rotation.y += 0.03;
 
     renderer.render(scene, camera)
 }
