@@ -36,11 +36,13 @@ scene.add(camera)
 const canvas = document.querySelector('.webgl')
 console.log(canvas)
 const renderer = new THREE.WebGLRenderer({ canvas })
-
+renderer.anialias = true;
+renderer.alpha = true;
+renderer.setPixelRatio(devicePixelRatio);
 renderer.setSize(sizes.width*0.8, sizes.height*0.8)
 
 
-const ambient = new THREE.AmbientLight(0x404040, 2);
+const ambient = new THREE.AmbientLight(0x404040, 5);
 const light = new THREE.DirectionalLight(0xffffff, 2);
 scene.add(ambient, light)
 // Loader
@@ -49,9 +51,9 @@ loader.load('../three/Vending-Machine.glb', function (gltf) {
     scene.add(gltf.scene);
     vendingMachine = gltf.scene.children[0];
     
-})
+    
+});
 
-loader.po
 const controls = new OrbitControls( camera, renderer.domElement );
 
 //controls.update() must be called after any manual changes to the camera's transform
@@ -59,7 +61,6 @@ camera.position.set(10, 10, 10);
 controls.update();
 
 function animate() {
-
 	requestAnimationFrame( animate );
 
 	// required if controls.enableDamping or controls.autoRotate are set to true
@@ -68,7 +69,7 @@ function animate() {
     mesh.rotation.y += 0.01;
 	renderer.render( scene, camera );
      
-}
+} 
 
 
 
