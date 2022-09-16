@@ -7,4 +7,4 @@ timeline
     .from('.first', { duration: 2, opacity: 0, x: '-100%', })
     .from('.last', { duration: 2, opacity: 0, y: '100%', })
     .from('.content', {duration: 2, opacity: 0})
-    .fromTo('.button-container', {duration: 2, opacity: 0})
+    

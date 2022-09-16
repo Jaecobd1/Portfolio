@@ -84,7 +84,7 @@ nav .left {
   background-repeat: no-repeat;
   background-position: center;
   justify-content: start;
-  z-index: 0;
+  z-index: 1;
   margin-top: -100px;
   
 }
@@ -99,6 +99,7 @@ nav .left {
   flex-direction: column;
   justify-content: center;
   padding: 50px;
+  z-index: 1;
 }
 /* HERO BUTTON LINKS */
 .hero .content a {
@@ -111,13 +112,15 @@ nav .left {
   font-family: montserrat;
   text-decoration: none;
   font-size: 32px;
+  z-index: 11;
+
 }
 
 .button-container {
   width: 80%;
   display: flex;
-  
   justify-content: space-between;
+  z-index: 11;
 }
 
 /* First & Last Name */
@@ -130,15 +133,18 @@ nav .left {
   display: flex;
   justify-content: end;
   font-size: 60px;
+  z-index: 0;
 }
 .name-container .first {
   margin: 100px 50px 0 0;
+  z-index: 1;
 }
 
 .name-container .last {
   transform: rotate(-90deg);
   position: absolute;
   margin: 250px -40px 0 0;
+  z-index: 1;
 }
 
 /* Menu / Section 2 */
@@ -515,10 +521,12 @@ padding:2px;
     width: 100%;
     display: flex;
     justify-content: center;
+    background-color: #043540;
 }
 
 /* Canvas */
 .ThreeD .three-container canvas {
+    object-fit: contain;
 }
 
 @media screen and (max-width:400px){
