@@ -449,7 +449,7 @@ padding:2px;
     padding-right: 5%;
     background-color: #fff;
     border-radius: 25px;
-    
+    border: 1rem solid black;
 }
 /*  */
 .programming .container .card .image {
@@ -482,6 +482,7 @@ padding:2px;
     border-radius: 25px;
     font-family: montserrat;
     font-size: 24px;
+    border: 0.3rem solid black;
 }
 
 
@@ -509,6 +510,8 @@ padding:2px;
 }
 .ThreeD .three-container {
     color: #fff;
+    border: 2px solid red;
+    height: 100%;
 }
 
 

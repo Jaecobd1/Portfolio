@@ -122,6 +122,15 @@
                 </div>
             </a>
         </div>
+        <div class="box">
+            <a href="https://jake.dobler.studio/">
+                <img src="images/Portfolio.png" alt="">
+                <div class="name" id="dark">
+                    <p>This website (HTML5 & CSS)</p>
+            
+                </div>
+            </a>
+        </div>
       </div>
           
       </div>
@@ -271,7 +280,7 @@
                 </a>
                 </div>
                 <div class="title-container">
-                <h2>System of Linear Equations Solver</h2>
+                <h2>System of Linear Equations Solver | C#</h2>
             </div>
             </div>
 
@@ -285,7 +294,7 @@
                 </div>
                 <div class="title-container">
 
-                <h2>Django Application | Python Group Final Project</h2>
+                <h2>Django Application | Python Group Project</h2>
                 </div>
 
             </div>
@@ -298,29 +307,20 @@
         <div class="title"><h2> 3D Design</h2></div>
 
         <div class="three-container">
-            <div class="canvas"></div>
+            <div class="canvas">
+                <canvas class="webgl">
+
+                </canvas>
+            </div>
         </div>
     </div>
     <div class="motion-graphics"  id="motion-graphics"></div>
     <div class="UI-UX"  id="UI-UX"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
-    <script src="javascript/script.js"></script>
-    <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
-    <script type="module">
-
-  import { OrbitControls } from 'https://unpkg.com/three@<version>/examples/jsm/controls/OrbitControls.js';
-
-  const controls = new OrbitControls( camera, renderer.domElement );
-
-</script>
-<script type="importmap">
-  {
-    "imports": {
-      "three": "https://unpkg.com/three@<version>/build/three.module.js"
-    }
-  }
-</script>
-    <script src="javascript/three-script.js"></script>
+    <script src="./javascript/script.js"></script>
+    <script src="./javascript/three.min.js"></script>
+    
+    <script src="./javascript/three.js"></script>
 </body>
 </html>
