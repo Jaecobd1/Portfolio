@@ -512,8 +512,14 @@ padding:2px;
     color: #fff;
     border: 2px solid red;
     height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
+/* Canvas */
+.ThreeD .three-container canvas {
+}
 
 @media screen and (max-width:400px){
     .photography.container{
