@@ -6,6 +6,7 @@ console.log(THREE);
 
 
 
+
 const sizes = {
     width: screen.width*.8,
     height: screen.height*.8
@@ -13,6 +14,23 @@ const sizes = {
 
 // scene
 const scene = new THREE.Scene()
+
+
+
+// Enviornment Map
+const cubeTextureLoader = new THREE.CubeTextureLoader()
+const environmentMap = cubeTextureLoader.load([
+    '../three/EM/px.jpg',
+    '../three/EM/nx.jpg',
+    '../three/EM/py.jpg',
+    '../three/EM/ny.jpg',
+    '../three/EM/pz.jpg',
+    '../three/EM/nz.jpg'
+
+])
+
+
+
 
 // Red Cube
 
@@ -41,14 +59,19 @@ renderer.setPixelRatio(devicePixelRatio);
 renderer.setSize(sizes.width*0.8, sizes.height*0.8)
 
 
-const ambient = new THREE.AmbientLight(0x404040, 5);
-const light = new THREE.DirectionalLight(0xffffff, 2);
+const ambient = new THREE.AmbientLight(0x404040, 6);
+const light = new THREE.DirectionalLight(0xffffff, 3);
 scene.add(ambient, light)
+
+scene.background = environmentMap
+
 // Loader
 let loader = new GLTFLoader();
-loader.load('../three/Vending-Machine.glb', function (gltf) {
-    scene.add(gltf.scene);
-    vendingMachine = gltf.scene.children[0];
+loader.load('../three/VM.glb', function (gltf) {
+    gltf.scene.scale.set(20, 20, 20)
+    gltf.scene.position.set(0, -2, 0)
+    scene.add(gltf.scene)
+    
     
     
 });
@@ -56,7 +79,7 @@ loader.load('../three/Vending-Machine.glb', function (gltf) {
 const controls = new OrbitControls( camera, renderer.domElement );
 
 //controls.update() must be called after any manual changes to the camera's transform
-camera.position.set(10, 10, 10);
+camera.position.set(10, 10, 40);
 controls.update();
 
 function animate() {
