@@ -56,7 +56,7 @@ console.log(canvas)
 const renderer = new THREE.WebGLRenderer({ canvas })
 renderer.alpha = true;
 renderer.setPixelRatio(devicePixelRatio);
-renderer.setSize(sizes.width*0.8, sizes.height*0.8)
+renderer.setSize(sizes.width, sizes.height)
 
 
 const ambient = new THREE.AmbientLight(0x404040, 6);
@@ -79,7 +79,7 @@ loader.load('../three/VM.glb', function (gltf) {
 const controls = new OrbitControls( camera, renderer.domElement );
 
 //controls.update() must be called after any manual changes to the camera's transform
-camera.position.set(10, 10, 40);
+camera.position.set(90, 25, 60);
 controls.update();
 
 function animate() {
