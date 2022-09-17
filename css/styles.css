@@ -529,6 +529,11 @@ padding:2px;
     object-fit: contain;
 }
 
+.ThreeD .three-container .canvas .title {
+    font-family: montserrat-l;
+    font-size: 24px;
+}
+
 
 
 /* About Page */

@@ -36,7 +36,6 @@ scene.add(camera)
 const canvas = document.querySelector('.webgl')
 console.log(canvas)
 const renderer = new THREE.WebGLRenderer({ canvas })
-renderer.anialias = true;
 renderer.alpha = true;
 renderer.setPixelRatio(devicePixelRatio);
 renderer.setSize(sizes.width*0.8, sizes.height*0.8)
@@ -74,3 +73,7 @@ function animate() {
 
 
 animate();
+
+const canvasTwo = document.querySelector('.canvasTwo')
+const rendererTwo = new THREE.WebGLRenderer({ canvasTwo })
+rendererTwo.setSize(sizes.width*0.8, sizes.height*0.8)
