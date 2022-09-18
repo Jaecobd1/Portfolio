@@ -596,6 +596,13 @@ padding:2px;
     margin: 25px;
 
 }
+.about .container .bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
 
 .about .container .right .title h1 {
     color: #000;
@@ -604,6 +611,23 @@ padding:2px;
 .about .container .right .content {
     margin: 0 auto;
     padding: 2rem;
+}
+
+.about .container .bottom .item {
+    margin: 25px;
+    padding: 25px;
+}
+
+.about .container .bottom .item .item-image img {
+    height: 200px;
+    width: 200px;
+}
+
+.about .container .bottom .item .item-name h2{
+    color: #fff;
+    text-align: center;
+    font-family: montserrat-l;
+    font-size: 24px;
 }
 
 
@@ -803,6 +827,13 @@ padding:2px;
     font-size: 24px;
     padding: 5px;
 }
+.contact .container .button-container button:hover {
+background-color: #999;
+}
+.contact .container .button-container button:active {
+    background-color: #000;
+}
+
 .contact .title{
     display: block;
     color: #fff;
