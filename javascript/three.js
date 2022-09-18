@@ -67,7 +67,7 @@ scene.background = environmentMap
 
 // Loader
 let loader = new GLTFLoader();
-loader.load('../three/VM.glb', function (gltf) {
+loader.load('../three/Vm3.glb', function (gltf) {
     gltf.scene.scale.set(20, 20, 20)
     gltf.scene.position.set(0, -2, 0)
     scene.add(gltf.scene)
