@@ -99,4 +99,4 @@ animate();
 
 const canvasTwo = document.querySelector('.canvasTwo')
 const rendererTwo = new THREE.WebGLRenderer({ canvasTwo })
-rendererTwo.setSize(sizes.width*0.8, sizes.height*0.8)
+rendererTwo.setSize(sizes.width*0.5, sizes.height*0.8)
