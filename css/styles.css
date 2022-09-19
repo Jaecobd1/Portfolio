@@ -611,6 +611,7 @@ padding:2px;
     flex-direction: column;
     padding: 25px;
     margin: 25px;
+    font-family: manrope;
 
 }
 .about .container .bottom {
@@ -643,7 +644,7 @@ padding:2px;
 .about .container .bottom .item .item-name h2{
     color: #fff;
     text-align: center;
-    font-family: montserrat-l;
+    font-family: manrope-l;
     font-size: 24px;
 }
 
