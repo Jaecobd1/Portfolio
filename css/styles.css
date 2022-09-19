@@ -34,6 +34,15 @@ a {
   font-family: montserrat-l;
   src: url(fonts/Montserrat-Light.ttf);
 }
+@font-face {
+    font-family: Manrope;
+    src: url(fonts/Manrope-Regular.ttf);
+    
+}
+@font-face {
+    font-family: Manrope-l;
+    src: url(fonts/Manrope-Light.ttf);
+}
 
 
 
@@ -90,11 +99,11 @@ nav .left {
   
 }
 .hero .content {
-  font-size: 24px;
+  font-size: 36px;
   height: 100%;
-  width: 471px;
+  width: 550px;
   color: #fff;
-  font-family: montserrat;
+  font-family: montserrat-l;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -109,10 +118,9 @@ nav .left {
   border: 2px solid #fff;
   border-radius: 100px;
   padding: 5px;
-  font-size: 16px;
-  font-family: montserrat;
+  font-size: 24px;
+  font-family: manrope;
   text-decoration: none;
-  font-size: 32px;
   z-index: 11;
 
 }
@@ -337,7 +345,7 @@ nav .left {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 25px;
-    font-family: montserrat;
+    font-family: manrope-l;
     pointer-events: none; 
     z-index: 4;
     transition: .3 ease-in-out;
@@ -528,12 +536,10 @@ padding:2px;
 }
 .ThreeD .three-container {
     color: #fff;
-    border: 2px solid red;
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: #555;
 }
 
 /* Canvas */
